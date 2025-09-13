@@ -1,7 +1,7 @@
-W ← 1000
+R ← ⁿ : e ¯ ÷ × 2 ⁿ 2 : √ /+ ⁿ 2 ⌵         # radial basis function
+G ← ≡₁R ⌵ - ⌊ ÷ 2 ⊸⧻ ⇡ ⊟ .                 # gaussian kernel function
+D ← ÷ ⊸(/↥/↥) √ ⌵ - ⊸↻ 1                   # discrete derivative
+S ← &fwa "out.png" img "png" - : /↥ /↥ . . #  saving
 
-Gaussian ← ≡₁(ⁿ : e ¯ ÷ × 2 ⁿ 2 : √ /+ ⁿ 2 ⌵) ⌵ -⌊ ÷ 2 ⊸⧻ ⇡ ⊟ . : ₙ e .
-Gradient ← ÷ ⊸(/↥/↥) ⌵ - ⊸↻ 1
-
-Gradient Gaussian W
-&fwa "out.png" img "png"
+# D ⍉ D ⍉ G 10 1
+S D G 10 1
