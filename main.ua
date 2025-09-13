@@ -1,10 +1,7 @@
-R ← ⁿ : e ¯ ÷ × 2 ⁿ 2 : √ /+ ⁿ 2 ⌵       # radial basis function
-G ← ≡₁R ⌵ - ⌊ ÷ 2 ⊸⧻ ⇡ ⊟ .               # gaussian kernel function
-D ← ÷ ⊸⍥/↥ 2 √ ⌵ - ⊸↻ 1                  # discrete derivative
-C ← ÷ ⊸⍥/↥ 2 +                           # combine rhos
-S ← &fwa "out.png" img "png" - : /↥ /↥ . #  saving
+R ← ⁿ : e ¯ ÷ × 2 ⁿ 2 : √ /+ ⁿ 2 ⌵
+G ← ≡₁R ⌵ - ⌊ ÷ 2 ⊸⧻ ⇡ ⊟ .
+D ← ÷ ⊸⍥/↥ 2 √ ⌵ - ⊸⬚0↻ 1_1
+C ← ÷ ⊸⍥/↥ 2 -
+S ← &fwa "out.png" img "png" - : /↥ /↥ .
 
-# D ⍉ D ⍉ G 10 1
-↻ 30_30 D G 512 3
-↻ 30_30 D G 512 3
-S
+S C D G 1024 6 G 1024 6
