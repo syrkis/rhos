@@ -1,3 +1,8 @@
 output/
 .DS_Store
 .ipynb_checkpoints
+
+
+# Added by cargo
+
+/target
